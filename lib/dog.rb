@@ -20,7 +20,7 @@ class Dog
     DB[:conn].execute("DROP TABLE IF EXISTS dogs")
   end
 
-  def save 
+  def save
     sql = "INSERT INTO songs (name, breed)
     VALUES (?,?)"
     DB[:conn].execute(sql, self.name, self.breed)
