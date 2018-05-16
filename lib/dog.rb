@@ -42,6 +42,6 @@ class Dog
     dog.name = name
     dog.breed = breed
     dog.save
-    dog
+    puts dog
   end
 end
